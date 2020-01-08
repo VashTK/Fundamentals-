@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+
+    console.log(add7(5))
+    console.log(multiply(5,4))
+    console.log(capitalize('TeStInG'))
+    console.log(lastLetter("TeStInG"))
+
+    function add7 (n) {
+        return n + 7;
+    }
+    function multiply (a,b) {
+        return a*b;
+    }
+    function capitalize (s) {
+        if (typeof s !== 'string') return ''
+        let lowerString = s.toLowerCase();
+        let newString = lowerString.charAt(0).toUpperCase() + lowerString.slice(1);
+        return newString;
+    }
+    function lastLetter (s) {
+        return s.slice(-1)
+    }
+  </script>
+</body>
+</html>
